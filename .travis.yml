@@ -27,6 +27,9 @@ before_script:
   - aria2c -x16 -s8 --console-log-level=error --summary-interval=0 "${TWRP_SOURCE3}" 
   - aria2c -x16 -s8 --console-log-level=error --summary-interval=0 "${TWRP_SOURCE4}"
   - tar --zstd -xf MinimalOmniRecovery*.tzst.aa --directory $HOME/twrp/ && rm MinimalOmniRecovery*.tzst.*
+  - tar --zstd -xf MinimalOmniRecovery*.tzst.ab --directory $HOME/twrp/ && rm MinimalOmniRecovery*.tzst.*
+  - tar --zstd -xf MinimalOmniRecovery*.tzst.ac --directory $HOME/twrp/ && rm MinimalOmniRecovery*.tzst.*
+  - tar --zstd -xf MinimalOmniRecovery*.tzst.ad --directory $HOME/twrp/ && rm MinimalOmniRecovery*.tzst.*
 script:
   # Replace your ${_USERNAME_}, ${_REPO_SLUG_}, ${_VENDORNAME_}, ${_CODENAME_}
   - cd $HOME/twrp/
