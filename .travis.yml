@@ -12,6 +12,21 @@ addons:
       - aria2
       - zstd
       - xz-utils
+      - android-sdk-platform-tools 
+      - adb 
+      - fastboot 
+      - squashfs-tools
+      - build-essential 
+      - gcc 
+      - gcc-multilib 
+      - g++ 
+      - g++-multilib
+      - clang 
+      - llvm 
+      - lld 
+      - cmake 
+      - automake 
+      - autoconf
 services:
   - docker
 before_install:
