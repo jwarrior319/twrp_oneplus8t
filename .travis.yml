@@ -50,7 +50,6 @@ script:
   - rm -rf bootable/recovery && git clone https://github.com/TeamWin/android_bootable_recovery -b android-9.0 --depth 1 bootable/recovery
   - ls -lAog
   - |
-    sudo chown -R sudo:sudo
     sudo docker run --rm -i -v "$(pwd):/home/builder/twrp/:rw,z" -v "${HOME}/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder:latest bash << EOF
     cd /home/builder/twrp/
     source /build/envsetup.sh
